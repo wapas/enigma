@@ -1,0 +1,10 @@
+extends ./layout
+ 
+block content
+  h1=logs
+  div.messages
+    each msg in messages
+        div.msg_detail	    
+          p   Date: #{msg.date}
+          p   Subject: #{msg.title}
+          p   Message: #{msg.text}
