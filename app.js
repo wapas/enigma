@@ -4,12 +4,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
 var logs = "Messages";
-var messages = [
-    {
-    date: "pusty",
-    title: "test",
-    text: "zestaw"}
-               ];
+var messages = [];
+               
   app.set('port', process.env.PORT || 3000);
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'jade');
